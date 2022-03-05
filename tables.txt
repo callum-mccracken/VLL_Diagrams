@@ -1,0 +1,101 @@
+VLL_decaytype = WW, VLL_type = LL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
+| --- | --- | --- | --- | --- |
+| 2 | 0 | 4 | $\ell\nu$ | $\ell\nu$ |
+| 1 | 2 | 3 | $\ell\nu$ | $qq$ |
+| 0 | 4 | 2 | $qq$ | $qq$ |
+
+VLL_decaytype = WW, VLL_type = NN
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
+| --- | --- | --- | --- | --- |
+| 4 | 0 | 2 | $\ell\nu$ | $\ell\nu$ |
+| 3 | 2 | 1 | $\ell\nu$ | $qq$ |
+| 2 | 4 | 0 | $qq$ | $qq$ |
+
+VLL_decaytype = WW, VLL_type = NL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
+| --- | --- | --- | --- | --- |
+| 3 | 0 | 3 | $\ell\nu$ | $\ell\nu$ |
+| 2 | 2 | 2 | $\ell\nu$ | $qq$ |
+| 1 | 4 | 1 | $qq$ | $qq$ |
+
+VLL_decaytype = ZZ, VLL_type = LL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
+| --- | --- | --- | --- | --- |
+| 6 | 0 | 0 | $\ell\ell$ | $\ell\ell$ |
+| 4 | 0 | 2 | $\ell\ell$ | $\nu\nu$ |
+| 4 | 2 | 0 | $\ell\ell$ | $qq$ |
+| 2 | 0 | 4 | $\nu\nu$ | $\nu\nu$ |
+| 2 | 2 | 2 | $\nu\nu$ | $qq$ |
+| 2 | 4 | 0 | $qq$ | $qq$ |
+
+VLL_decaytype = ZZ, VLL_type = NN
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
+| --- | --- | --- | --- | --- |
+| 4 | 0 | 2 | $\ell\ell$ | $\ell\ell$ |
+| 2 | 0 | 4 | $\ell\ell$ | $\nu\nu$ |
+| 2 | 2 | 2 | $\ell\ell$ | $qq$ |
+| 0 | 0 | 6 | $\nu\nu$ | $\nu\nu$ |
+| 0 | 2 | 4 | $\nu\nu$ | $qq$ |
+| 0 | 4 | 2 | $qq$ | $qq$ |
+
+VLL_decaytype = ZZ, VLL_type = NL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
+| --- | --- | --- | --- | --- |
+| 5 | 0 | 1 | $\ell\ell$ | $\ell\ell$ |
+| 3 | 0 | 3 | $\ell\ell$ | $\nu\nu$ |
+| 3 | 2 | 1 | $\ell\ell$ | $qq$ |
+| 1 | 0 | 5 | $\nu\nu$ | $\nu\nu$ |
+| 1 | 2 | 3 | $\nu\nu$ | $qq$ |
+| 1 | 4 | 1 | $qq$ | $qq$ |
+
+VLL_decaytype = WZ, VLL_type = LL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
+| --- | --- | --- | --- | --- |
+| 4 | 0 | 2 | $\ell\nu$ | $\ell\ell$ |
+| 2 | 0 | 4 | $\ell\nu$ | $\nu\nu$ |
+| 2 | 2 | 2 | $\ell\nu$ | $qq$ |
+| 3 | 2 | 1 | $qq$ | $\ell\ell$ |
+| 1 | 2 | 3 | $qq$ | $\nu\nu$ |
+| 1 | 4 | 1 | $qq$ | $qq$ |
+
+VLL_decaytype = WZ, VLL_type = NN
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
+| --- | --- | --- | --- | --- |
+| 4 | 0 | 2 | $\ell\nu$ | $\ell\ell$ |
+| 2 | 0 | 4 | $\ell\nu$ | $\nu\nu$ |
+| 2 | 2 | 2 | $\ell\nu$ | $qq$ |
+| 3 | 2 | 1 | $qq$ | $\ell\ell$ |
+| 1 | 2 | 3 | $qq$ | $\nu\nu$ |
+| 1 | 4 | 1 | $qq$ | $qq$ |
+
+VLL_decaytype = WZ, VLL_type = NL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
+| --- | --- | --- | --- | --- |
+| 5 | 0 | 1 | $\ell\nu$ | $\ell\ell$ |
+| 3 | 0 | 3 | $\ell\nu$ | $\nu\nu$ |
+| 3 | 2 | 1 | $\ell\nu$ | $qq$ |
+| 4 | 2 | 0 | $qq$ | $\ell\ell$ |
+| 2 | 2 | 2 | $qq$ | $\nu\nu$ |
+| 2 | 4 | 0 | $qq$ | $qq$ |
+
+VLL_decaytype = WZ, VLL_type = LN
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
+| --- | --- | --- | --- | --- |
+| 3 | 0 | 3 | $\ell\nu$ | $\ell\ell$ |
+| 1 | 0 | 5 | $\ell\nu$ | $\nu\nu$ |
+| 1 | 2 | 3 | $\ell\nu$ | $qq$ |
+| 2 | 2 | 2 | $qq$ | $\ell\ell$ |
+| 0 | 2 | 4 | $qq$ | $\nu\nu$ |
+| 0 | 4 | 2 | $qq$ | $qq$ |
+

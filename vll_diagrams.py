@@ -41,6 +41,8 @@ boson_decay_products = {
         (r'$\nu$', r'$\nu$')
         ],
     r'$H$': [
+        (r'$\ell$', r'$\ell$'), 
+        (r'$g$', r'$g$'),  
         (r'$q$', r'$q$'), 
         (r'$\gamma$', r'$\gamma$'), 
         (r'$Zqq$', r'$Zqq$'),
@@ -52,8 +54,6 @@ boson_decay_products = {
         (r'$Wqq$', r'$Wqq$'), 
         (r'$Wqq$', r'$W\ell\nu$'), 
         (r'$W\ell\nu$', r'$W\ell\nu$'), 
-        (r'$\ell$', r'$\ell$'), 
-        (r'$g$', r'$g$')
         ]
 }
 
@@ -114,157 +114,208 @@ def get_corresponding_lepton(vll, boson):
             return r'$\nu$'
 
 def strip(label):
-    return label.replace('\\', '').replace('$', '').replace('{', '').replace('}', '').replace('*', '').replace('^', '').replace(' ', '')
+    label = label.replace('\\', '').replace('$', '').replace('{', '')
+    label = label.replace('}', '').replace('*', '').replace('^', '')
+    return label.replace(' ', '')
 
 # loop over all options
 counter = 0
 final_state_lines = []
+plotted = []
+
 for middle_boson_label in sorted(middle_boson_labels):
-    for upper_vll_label in sorted(vll_labels):
-        for upper_boson_label in sorted(vll_decay_boson_labels):
-            for up_dp1, up_dp2 in sorted(boson_decay_products[upper_boson_label]):
-                for lower_vll_label in sorted(vll_labels):
-                    for lower_boson_label in sorted(vll_decay_boson_labels):
-                        for dn_dp1, dn_dp2 in sorted(boson_decay_products[lower_boson_label]):
-                            n_leptons = 0
-                            n_jets = 0
-                            n_neutrinos = 0
-                            n_photons = 0
+    for vll_type in sorted(['LL', 'NL', 'NN']):
+        upper_vll_label = r"$\ell'$" if vll_type[0]=='L' else r"$\nu'$"
+        lower_vll_label = r"$\ell'$" if vll_type[1]=='L' else r"$\nu'$"
+        same_vll_type = vll_type in ['LL', 'NN']
+        for vll_decay_type in sorted(['WW', 'WZ', 'ZZ', 'WH', 'HZ', 'HH']):
+            upper_boson_label = "$"+vll_decay_type[0]+"$"
+            lower_boson_label = "$"+vll_decay_type[1]+"$"
+            same_boson = upper_boson_label==lower_boson_label
+            for up_dp in sorted(boson_decay_products[upper_boson_label]):
+                up_dp1, up_dp2 = up_dp
+                for dn_dp in sorted(boson_decay_products[lower_boson_label]):
+                    dn_dp1, dn_dp2 = dn_dp
+                    n_leptons = 0
+                    n_jets_upper = 0
+                    n_neutrinos_upper = 0
+                    n_jets_lower = 0
+                    n_neutrinos_lower = 0
+                    n_photons = 0
 
-                            # each vll can decay into either H W or Z + a lepton
-                            # figure out what kind of lepton you'll have
-                            upper_decay_lepton = get_corresponding_lepton(upper_vll_label, upper_boson_label)
-                            lower_decay_lepton = get_corresponding_lepton(lower_vll_label, lower_boson_label)
-                            if upper_decay_lepton is None or lower_decay_lepton is None:
-                                continue
-                            
-                            # count decay leptons
-                            for lep in [upper_decay_lepton, lower_decay_lepton]:
-                                if lep == r'$\ell$':
-                                    n_leptons += 1
-                                elif lep == r'$\nu$':
-                                    n_neutrinos += 1
-                                else:
-                                    raise ValueError('wtf')
+                    # each vll can decay into either H W or Z + a lepton
+                    # figure out what kind of lepton you'll have
+                    upper_decay_lepton = get_corresponding_lepton(upper_vll_label, upper_boson_label)
+                    lower_decay_lepton = get_corresponding_lepton(lower_vll_label, lower_boson_label)
+                    if upper_decay_lepton is None or lower_decay_lepton is None:
+                        continue
+                    
+                    # count decay leptons
+                    if upper_decay_lepton == r'$\ell$':
+                        n_leptons += 1
+                    else:
+                        n_neutrinos_upper += 1
+                    if lower_decay_lepton == r'$\ell$':
+                        n_leptons += 1
+                    else:
+                        n_neutrinos_lower += 1
 
-                            # count decay product states
-                            for dp in [up_dp1,up_dp2,dn_dp1,dn_dp2]:
-                                if dp in [r"$q$", r'$g$']:
-                                    n_jets += 1
-                                elif dp == r'$\ell$':
-                                    n_leptons += 1
-                                elif dp == r'$\nu$':
-                                    n_neutrinos += 1
-                                elif dp == r'$\gamma$':
-                                    n_photons += 1
-                                elif dp == r'$Zqq$':
-                                    n_jets += 2
-                                elif dp == r'$Z\ell\ell$':
-                                    n_leptons += 2
-                                elif dp == r'$Z\nu\nu$':
-                                    n_neutrinos += 2
-                                elif dp == r'$Wqq$':
-                                    n_jets += 1
-                                elif dp == r'$W\ell\nu$':
-                                    n_leptons += 1
-                                    n_neutrinos += 1
+                    # count decay product states
+                    for udp in [up_dp1, up_dp2]:
+                        if udp in [r"$q$", r'$g$']:
+                            n_jets_upper += 1
+                        elif udp == r'$\ell$':
+                            n_leptons += 1
+                        elif udp == r'$\nu$':
+                            n_neutrinos_upper += 1
+                        elif udp == r'$\gamma$':
+                            n_photons += 1
+                        elif udp == r'$Zqq$':
+                            n_jets_upper += 2
+                        elif udp == r'$Z\ell\ell$':
+                            n_leptons += 2
+                        elif udp == r'$Z\nu\nu$':
+                            n_neutrinos_upper += 2
+                        elif udp == r'$Wqq$':
+                            n_jets_upper += 1
+                        elif udp == r'$W\ell\nu$':
+                            n_leptons += 1
+                            n_neutrinos_upper += 1
+                    for ldp in [dn_dp1, dn_dp2]:
+                        if ldp in [r"$q$", r'$g$']:
+                            n_jets_lower += 1
+                        elif ldp == r'$\ell$':
+                            n_leptons += 1
+                        elif ldp == r'$\nu$':
+                            n_neutrinos_lower += 1
+                        elif ldp == r'$\gamma$':
+                            n_photons += 1
+                        elif ldp == r'$Zqq$':
+                            n_jets_lower += 2
+                        elif ldp == r'$Z\ell\ell$':
+                            n_leptons += 2
+                        elif ldp == r'$Z\nu\nu$':
+                            n_neutrinos_lower += 2
+                        elif ldp == r'$Wqq$':
+                            n_jets_lower += 1
+                        elif ldp == r'$W\ell\nu$':
+                            n_leptons += 1
+                            n_neutrinos_lower += 1
 
-                            # only plot if n_jets <=3
-                            # and if n_leptons <=4
-                            # we assert no nu -> Z + nu earlier
-                            if n_jets > 3:
-                                continue
-                            if n_leptons > 4:
-                                continue
+                    # only plot if n_jets <=3
+                    # and if n_leptons <=4
+                    # we assert no nu -> Z + nu earlier
+                    n_jets = n_jets_upper + n_jets_lower
+                    n_neutrinos = n_neutrinos_upper + n_neutrinos_lower
+                    if n_jets > 3:
+                        continue
+                    if n_leptons > 4:
+                        continue
+                    if n_neutrinos > 1:
+                        continue
 
-                            # initialize figure
-                            fig = plt.figure(figsize=(10.,10.))
-                            ax = fig.add_axes([0,0,1,1], frameon=False)
+                    # make sure at least one branch is reconstructable
+                    if (n_neutrinos_lower + n_jets_lower > 1) and (n_neutrinos_upper + n_jets_upper > 1):
+                        continue
 
-                            # initialize diagram
-                            diagram = Diagram(ax)
+                    # also check if we've plotted a duplicate:
+                    if same_boson and same_vll_type:
+                        if [vll_decay_type, vll_type, {up_dp, dn_dp}] in plotted:
+                            continue
+                        else:
+                            plotted.append([vll_decay_type, vll_type, {up_dp, dn_dp}])
 
-                            # set endpoints (same for all diagrams)
-                            in_top = diagram.vertex(xy=(.1,.9), marker='')
-                            in_bottom = diagram.vertex(xy=(.1,.1), marker='')
-                            left = diagram.vertex(xy=(.3,.5), marker='')
-                            right = diagram.vertex(xy=(.55,.5), marker='')
-                            upper_vll_vtx = diagram.vertex(xy=(.7,.7), marker='')
-                            upper_vll_lep_vtx = diagram.vertex(xy=(.9,.9), marker='')
-                            upper_vll_bos_vtx = diagram.vertex(xy=(.8,.65), marker='')
-                            upper_bos_dp_up_vtx = diagram.vertex(xy=(.9,.75), marker='')
-                            upper_bos_dp_dn_vtx = diagram.vertex(xy=(.9,.55), marker='')
-                            lower_vll_vtx = diagram.vertex(xy=(.7,.3), marker='')
-                            lower_vll_lep_vtx = diagram.vertex(xy=(.9,.1), marker='')
-                            lower_vll_bos_vtx = diagram.vertex(xy=(.8,.35), marker='')
-                            lower_bos_dp_up_vtx = diagram.vertex(xy=(.9,.45), marker='')
-                            lower_bos_dp_dn_vtx = diagram.vertex(xy=(.9,.25), marker='')
 
-                            # draw incoming quark lines
-                            q1 = diagram.line(in_top, left, **fermion_kwargs)
-                            q2 = diagram.line(left, in_bottom, **fermion_kwargs)
+                    # initialize figure
+                    fig = plt.figure(figsize=(10.,10.))
+                    ax = fig.add_axes([0,0,1,1], frameon=False)
 
-                            # middle boson
-                            mid_bos = diagram.line(left, right, **ew_boson_kwargs)
+                    # initialize diagram
+                    diagram = Diagram(ax)
 
-                            # VLLs and decay products
-                            upper_vll = diagram.line(right, upper_vll_vtx, **get_kwargs(upper_vll_label))
-                            upper_vll_lep = diagram.line(upper_vll_vtx, upper_vll_lep_vtx, **get_kwargs(upper_decay_lepton))
-                            upper_vll_bos = diagram.line(upper_vll_vtx, upper_vll_bos_vtx, **get_kwargs(upper_boson_label))
-                            upper_bos_dp_up = diagram.line(upper_vll_bos_vtx, upper_bos_dp_up_vtx, **get_kwargs(up_dp1))
-                            upper_bos_dp_dn = diagram.line(upper_bos_dp_dn_vtx, upper_vll_bos_vtx, **get_kwargs(up_dp2))
+                    # set endpoints (same for all diagrams)
+                    in_top = diagram.vertex(xy=(.1,.9), marker='')
+                    in_bottom = diagram.vertex(xy=(.1,.1), marker='')
+                    left = diagram.vertex(xy=(.3,.5), marker='')
+                    right = diagram.vertex(xy=(.55,.5), marker='')
+                    upper_vll_vtx = diagram.vertex(xy=(.7,.7), marker='')
+                    upper_vll_lep_vtx = diagram.vertex(xy=(.9,.9), marker='')
+                    upper_vll_bos_vtx = diagram.vertex(xy=(.8,.65), marker='')
+                    upper_bos_dp_up_vtx = diagram.vertex(xy=(.9,.75), marker='')
+                    upper_bos_dp_dn_vtx = diagram.vertex(xy=(.9,.55), marker='')
+                    lower_vll_vtx = diagram.vertex(xy=(.7,.3), marker='')
+                    lower_vll_lep_vtx = diagram.vertex(xy=(.9,.1), marker='')
+                    lower_vll_bos_vtx = diagram.vertex(xy=(.8,.35), marker='')
+                    lower_bos_dp_up_vtx = diagram.vertex(xy=(.9,.45), marker='')
+                    lower_bos_dp_dn_vtx = diagram.vertex(xy=(.9,.25), marker='')
 
-                            lower_vll = diagram.line(lower_vll_vtx, right, **get_kwargs(lower_vll_label))
-                            lower_vll_lep = diagram.line(lower_vll_lep_vtx, lower_vll_vtx, **get_kwargs(lower_decay_lepton))
-                            lower_vll_bos = diagram.line(lower_vll_vtx, lower_vll_bos_vtx, **get_kwargs(lower_boson_label))
-                            lower_bos_dp_up = diagram.line(lower_vll_bos_vtx, lower_bos_dp_up_vtx, **get_kwargs(dn_dp1))
-                            lower_bos_dp_dn = diagram.line(lower_bos_dp_dn_vtx, lower_vll_bos_vtx, **get_kwargs(dn_dp2))
+                    # draw incoming quark lines
+                    q1 = diagram.line(in_top, left, **fermion_kwargs)
+                    q2 = diagram.line(left, in_bottom, **fermion_kwargs)
 
-                            # set labels
-                            in_top.text(r'$q$', fontsize=30)
-                            in_bottom.text(r'$q$', fontsize=30)
+                    # middle boson
+                    mid_bos = diagram.line(left, right, **ew_boson_kwargs)
 
-                            mid_bos.text(middle_boson_label, fontsize=30, t=0)
+                    # VLLs and decay products
+                    upper_vll = diagram.line(right, upper_vll_vtx, **get_kwargs(upper_vll_label))
+                    upper_vll_lep = diagram.line(upper_vll_vtx, upper_vll_lep_vtx, **get_kwargs(upper_decay_lepton))
+                    upper_vll_bos = diagram.line(upper_vll_vtx, upper_vll_bos_vtx, **get_kwargs(upper_boson_label))
+                    upper_bos_dp_up = diagram.line(upper_vll_bos_vtx, upper_bos_dp_up_vtx, **get_kwargs(up_dp1))
+                    upper_bos_dp_dn = diagram.line(upper_bos_dp_dn_vtx, upper_vll_bos_vtx, **get_kwargs(up_dp2))
 
-                            upper_vll.text(upper_vll_label, fontsize=30, y=0.06)
-                            upper_vll_lep.text(upper_decay_lepton, fontsize=30, y=0.06)
-                            upper_vll_bos.text(upper_boson_label, fontsize=30, y=-0.06)
-                            upper_bos_dp_up.text(up_dp1, fontsize=30, y=0.06)
-                            upper_bos_dp_dn.text(up_dp2, fontsize=30, y=0.06)
+                    lower_vll = diagram.line(lower_vll_vtx, right, **get_kwargs(lower_vll_label))
+                    lower_vll_lep = diagram.line(lower_vll_lep_vtx, lower_vll_vtx, **get_kwargs(lower_decay_lepton))
+                    lower_vll_bos = diagram.line(lower_vll_vtx, lower_vll_bos_vtx, **get_kwargs(lower_boson_label))
+                    lower_bos_dp_up = diagram.line(lower_vll_bos_vtx, lower_bos_dp_up_vtx, **get_kwargs(dn_dp1))
+                    lower_bos_dp_dn = diagram.line(lower_bos_dp_dn_vtx, lower_vll_bos_vtx, **get_kwargs(dn_dp2))
 
-                            lower_vll.text(lower_vll_label, fontsize=30, y=0.08)
-                            lower_vll_lep.text(lower_decay_lepton, fontsize=30, y=0.08)
-                            lower_vll_bos.text(lower_boson_label, fontsize=30, y=0.04)
-                            lower_bos_dp_up.text(dn_dp1, fontsize=30, y=0.06)
-                            lower_bos_dp_dn.text(dn_dp2, fontsize=30, y=0.06)
+                    # set labels
+                    in_top.text(r'$q$', fontsize=30)
+                    in_bottom.text(r'$q$', fontsize=30)
 
-                            # plot lines on axis
-                            diagram.plot()
+                    mid_bos.text(middle_boson_label, fontsize=30, t=0)
 
-                            # save figure
-                            if upper_vll_label == r"$\ell'$":
-                                upper_vll_letter = 'L'
-                            else:
-                                upper_vll_letter = 'N'
-                            
-                            if lower_vll_label == r"$\ell'$":
-                                lower_vll_letter = 'L'
-                            else:
-                                lower_vll_letter = 'N'
+                    upper_vll.text(upper_vll_label, fontsize=30, y=0.06)
+                    upper_vll_lep.text(upper_decay_lepton, fontsize=30, y=0.06)
+                    upper_vll_bos.text(upper_boson_label, fontsize=30, y=-0.06)
+                    upper_bos_dp_up.text(up_dp1, fontsize=30, y=0.06)
+                    upper_bos_dp_dn.text(up_dp2, fontsize=30, y=0.06)
 
-                            fig_title = strip(f'{upper_boson_label}{lower_boson_label}_{upper_vll_letter}{lower_vll_letter}_{upper_decay_lepton}{lower_decay_lepton}_{up_dp1}{up_dp2}_{dn_dp1}{dn_dp2}.png')
-                            plt.savefig(fig_title, dpi=300)
-                            plt.cla(); plt.clf()
-                            plt.close()
-                            print(fig_title, counter)
-                            # save info about state
-                            print(r'| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | '+upper_boson_label+r' decay | '+lower_boson_label+r' decay |')
+                    lower_vll.text(lower_vll_label, fontsize=30, y=0.08)
+                    lower_vll_lep.text(lower_decay_lepton, fontsize=30, y=0.08)
+                    lower_vll_bos.text(lower_boson_label, fontsize=30, y=0.04)
+                    lower_bos_dp_up.text(dn_dp1, fontsize=30, y=0.06)
+                    lower_bos_dp_dn.text(dn_dp2, fontsize=30, y=0.06)
 
-                            print(f'| {n_leptons} | {n_jets} | {n_neutrinos} | {up_dp1}{up_dp2} | {dn_dp1}{dn_dp2} |'.replace('$$', ''))
+                    # plot lines on axis
+                    diagram.plot()
 
-                            counter += 1
-                            final_state_line = strip(f"{upper_decay_lepton},{up_dp1},{up_dp2},{lower_decay_lepton},{dn_dp1},{dn_dp2}")
-                            final_state_lines.append(final_state_line)
+                    # save figure
+                    if upper_vll_label == r"$\ell'$":
+                        upper_vll_letter = 'L'
+                    else:
+                        upper_vll_letter = 'N'
+                    
+                    if lower_vll_label == r"$\ell'$":
+                        lower_vll_letter = 'L'
+                    else:
+                        lower_vll_letter = 'N'
+
+                    fig_title = strip(f'{upper_boson_label}{lower_boson_label}_{upper_vll_letter}{lower_vll_letter}_{upper_decay_lepton}{lower_decay_lepton}_{up_dp1}{up_dp2}_{dn_dp1}{dn_dp2}.png')
+                    plt.savefig(fig_title, dpi=300)
+                    plt.cla(); plt.clf()
+                    plt.close()
+                    print(fig_title, counter)
+                    # save info about state
+                    print(r'| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | '+upper_boson_label+r' decay | '+lower_boson_label+r' decay |')
+
+                    print(f'| {n_leptons} | {n_jets} | {n_neutrinos} | {up_dp1}{up_dp2} | {dn_dp1}{dn_dp2} |'.replace('$$', ''))
+
+                    counter += 1
+                    final_state_line = strip(f"{upper_decay_lepton},{up_dp1},{up_dp2},{lower_decay_lepton},{dn_dp1},{dn_dp2}")
+                    final_state_lines.append(final_state_line)
+
+                    plotted.append(vll_decay_type)
 
 with open('final_states.csv', 'w+') as final_state_file:
     final_state_file.write('\n'.join(final_state_lines))

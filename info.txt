@@ -1,768 +1,165 @@
-HH_LL_ellell_WW_WW.png 0
+HH_LL_ellell_WqqWellnu_gammagamma.png 0
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 0 | 0 | $WW$ | $WW$ |
-HH_LL_ellell_WW_ZZ.png 1
+| 3 | 2 | 1 | $WqqW\ell\nu$ | $\gamma\gamma$ |
+HH_LL_ellell_WqqWellnu_gg.png 1
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 0 | 0 | $WW$ | $ZZ$ |
-HH_LL_ellell_WW_ellell.png 2
+| 3 | 2 | 1 | $WqqW\ell\nu$ | $gg$ |
+HH_LL_ellell_WqqWellnu_qq.png 2
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 4 | 0 | 0 | $WW$ | $\ell\ell$ |
-HH_LL_ellell_WW_gammagamma.png 3
+| 3 | 4 | 1 | $WqqW\ell\nu$ | $qq$ |
+HH_LL_ellell_WqqWqq_ellell.png 3
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 0 | 0 | $WW$ | $\gamma\gamma$ |
-HH_LL_ellell_WW_gg.png 4
+| 4 | 4 | 0 | $WqqWqq$ | $\ell\ell$ |
+HH_LL_ellell_WqqWqq_gammagamma.png 4
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 2 | 0 | $WW$ | $gg$ |
-HH_LL_ellell_WW_qq.png 5
+| 2 | 4 | 0 | $WqqWqq$ | $\gamma\gamma$ |
+HH_LL_ellell_WqqWqq_gg.png 5
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 2 | 0 | $WW$ | $qq$ |
-HW_LL_ellnu_WW_ellnu.png 6
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 2 | 0 | 2 | $WW$ | $\ell\nu$ |
-HW_LL_ellnu_WW_qq.png 7
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 1 | 2 | 1 | $WW$ | $qq$ |
-HZ_LL_ellell_WW_ellell.png 8
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 4 | 0 | 0 | $WW$ | $\ell\ell$ |
-HZ_LL_ellell_WW_nunu.png 9
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 2 | 0 | 2 | $WW$ | $\nu\nu$ |
-HZ_LL_ellell_WW_qq.png 10
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 2 | 2 | 0 | $WW$ | $qq$ |
-HW_LN_ellell_WW_ellnu.png 11
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 3 | 0 | 1 | $WW$ | $\ell\nu$ |
-HW_LN_ellell_WW_qq.png 12
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 2 | 2 | 0 | $WW$ | $qq$ |
-HZ_LN_ellnu_WW_ellell.png 13
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 3 | 0 | 1 | $WW$ | $\ell\ell$ |
-HZ_LN_ellnu_WW_nunu.png 14
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 1 | 0 | 3 | $WW$ | $\nu\nu$ |
-HZ_LN_ellnu_WW_qq.png 15
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 1 | 2 | 1 | $WW$ | $qq$ |
-HH_LL_ellell_ZZ_WW.png 16
+| 2 | 4 | 0 | $WqqWqq$ | $gg$ |
+HH_LL_ellell_ZqqZellell_gammagamma.png 6
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 0 | 0 | $ZZ$ | $WW$ |
-HH_LL_ellell_ZZ_ZZ.png 17
+| 4 | 2 | 0 | $ZqqZ\ell\ell$ | $\gamma\gamma$ |
+HH_LL_ellell_ZqqZellell_gg.png 7
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 0 | 0 | $ZZ$ | $ZZ$ |
-HH_LL_ellell_ZZ_ellell.png 18
+| 4 | 2 | 0 | $ZqqZ\ell\ell$ | $gg$ |
+HH_LL_ellell_ZqqZellell_qq.png 8
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 4 | 0 | 0 | $ZZ$ | $\ell\ell$ |
-HH_LL_ellell_ZZ_gammagamma.png 19
+| 4 | 4 | 0 | $ZqqZ\ell\ell$ | $qq$ |
+HH_LL_ellell_ZqqZqq_ellell.png 9
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 0 | 0 | $ZZ$ | $\gamma\gamma$ |
-HH_LL_ellell_ZZ_gg.png 20
+| 4 | 4 | 0 | $ZqqZqq$ | $\ell\ell$ |
+HH_LL_ellell_ZqqZqq_gammagamma.png 10
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 2 | 0 | $ZZ$ | $gg$ |
-HH_LL_ellell_ZZ_qq.png 21
+| 2 | 4 | 0 | $ZqqZqq$ | $\gamma\gamma$ |
+HH_LL_ellell_ZqqZqq_gg.png 11
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 2 | 0 | $ZZ$ | $qq$ |
-HW_LL_ellnu_ZZ_ellnu.png 22
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 2 | 0 | 2 | $ZZ$ | $\ell\nu$ |
-HW_LL_ellnu_ZZ_qq.png 23
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 1 | 2 | 1 | $ZZ$ | $qq$ |
-HZ_LL_ellell_ZZ_ellell.png 24
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 4 | 0 | 0 | $ZZ$ | $\ell\ell$ |
-HZ_LL_ellell_ZZ_nunu.png 25
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 2 | 0 | 2 | $ZZ$ | $\nu\nu$ |
-HZ_LL_ellell_ZZ_qq.png 26
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 2 | 2 | 0 | $ZZ$ | $qq$ |
-HW_LN_ellell_ZZ_ellnu.png 27
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 3 | 0 | 1 | $ZZ$ | $\ell\nu$ |
-HW_LN_ellell_ZZ_qq.png 28
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 2 | 2 | 0 | $ZZ$ | $qq$ |
-HZ_LN_ellnu_ZZ_ellell.png 29
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 3 | 0 | 1 | $ZZ$ | $\ell\ell$ |
-HZ_LN_ellnu_ZZ_nunu.png 30
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 1 | 0 | 3 | $ZZ$ | $\nu\nu$ |
-HZ_LN_ellnu_ZZ_qq.png 31
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 1 | 2 | 1 | $ZZ$ | $qq$ |
-HH_LL_ellell_ellell_WW.png 32
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 4 | 0 | 0 | $\ell\ell$ | $WW$ |
-HH_LL_ellell_ellell_ZZ.png 33
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 4 | 0 | 0 | $\ell\ell$ | $ZZ$ |
-HH_LL_ellell_ellell_ellell.png 34
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 6 | 0 | 0 | $\ell\ell$ | $\ell\ell$ |
-HH_LL_ellell_ellell_gammagamma.png 35
+| 2 | 4 | 0 | $ZqqZqq$ | $gg$ |
+HH_LL_ellell_ellell_gammagamma.png 12
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
 | 4 | 0 | 0 | $\ell\ell$ | $\gamma\gamma$ |
-HH_LL_ellell_ellell_gg.png 36
+HH_LL_ellell_ellell_gg.png 13
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 4 | 2 | 0 | $\ell\ell$ | $gg$ |
-HH_LL_ellell_ellell_qq.png 37
+| 4 | 0 | 0 | $\ell\ell$ | $gg$ |
+HH_LL_ellell_ellell_qq.png 14
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
 | 4 | 2 | 0 | $\ell\ell$ | $qq$ |
-HW_LL_ellnu_ellell_ellnu.png 38
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 4 | 0 | 2 | $\ell\ell$ | $\ell\nu$ |
-HW_LL_ellnu_ellell_qq.png 39
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 3 | 2 | 1 | $\ell\ell$ | $qq$ |
-HZ_LL_ellell_ellell_ellell.png 40
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 6 | 0 | 0 | $\ell\ell$ | $\ell\ell$ |
-HZ_LL_ellell_ellell_nunu.png 41
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 4 | 0 | 2 | $\ell\ell$ | $\nu\nu$ |
-HZ_LL_ellell_ellell_qq.png 42
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 4 | 2 | 0 | $\ell\ell$ | $qq$ |
-HW_LN_ellell_ellell_ellnu.png 43
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 5 | 0 | 1 | $\ell\ell$ | $\ell\nu$ |
-HW_LN_ellell_ellell_qq.png 44
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 4 | 2 | 0 | $\ell\ell$ | $qq$ |
-HZ_LN_ellnu_ellell_ellell.png 45
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 5 | 0 | 1 | $\ell\ell$ | $\ell\ell$ |
-HZ_LN_ellnu_ellell_nunu.png 46
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 3 | 0 | 3 | $\ell\ell$ | $\nu\nu$ |
-HZ_LN_ellnu_ellell_qq.png 47
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 3 | 2 | 1 | $\ell\ell$ | $qq$ |
-HH_LL_ellell_gammagamma_WW.png 48
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 0 | 0 | $\gamma\gamma$ | $WW$ |
-HH_LL_ellell_gammagamma_ZZ.png 49
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 0 | 0 | $\gamma\gamma$ | $ZZ$ |
-HH_LL_ellell_gammagamma_ellell.png 50
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 4 | 0 | 0 | $\gamma\gamma$ | $\ell\ell$ |
-HH_LL_ellell_gammagamma_gammagamma.png 51
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 0 | 0 | $\gamma\gamma$ | $\gamma\gamma$ |
-HH_LL_ellell_gammagamma_gg.png 52
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 2 | 0 | $\gamma\gamma$ | $gg$ |
-HH_LL_ellell_gammagamma_qq.png 53
+HH_LL_ellell_gammagamma_qq.png 15
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
 | 2 | 2 | 0 | $\gamma\gamma$ | $qq$ |
-HW_LL_ellnu_gammagamma_ellnu.png 54
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 2 | 0 | 2 | $\gamma\gamma$ | $\ell\nu$ |
-HW_LL_ellnu_gammagamma_qq.png 55
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 1 | 2 | 1 | $\gamma\gamma$ | $qq$ |
-HZ_LL_ellell_gammagamma_ellell.png 56
+HH_LL_ellell_gg_qq.png 16
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
+| 2 | 2 | 0 | $gg$ | $qq$ |
+HH_LL_ellell_qq_qq.png 17
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
+| 2 | 4 | 0 | $qq$ | $qq$ |
+HZ_LL_ellell_WqqWellnu_qq.png 18
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
+| 3 | 4 | 1 | $WqqW\ell\nu$ | $qq$ |
+HZ_LL_ellell_WqqWqq_ellell.png 19
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
+| 4 | 4 | 0 | $WqqWqq$ | $\ell\ell$ |
+HZ_LL_ellell_ZqqZellell_qq.png 20
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
+| 4 | 4 | 0 | $ZqqZ\ell\ell$ | $qq$ |
+HZ_LL_ellell_ZqqZqq_ellell.png 21
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
+| 4 | 4 | 0 | $ZqqZqq$ | $\ell\ell$ |
+HZ_LL_ellell_ellell_qq.png 22
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
+| 4 | 2 | 0 | $\ell\ell$ | $qq$ |
+HZ_LL_ellell_gammagamma_ellell.png 23
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
 | 4 | 0 | 0 | $\gamma\gamma$ | $\ell\ell$ |
-HZ_LL_ellell_gammagamma_nunu.png 57
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 2 | 0 | 2 | $\gamma\gamma$ | $\nu\nu$ |
-HZ_LL_ellell_gammagamma_qq.png 58
+HZ_LL_ellell_gammagamma_qq.png 24
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
 | 2 | 2 | 0 | $\gamma\gamma$ | $qq$ |
-HW_LN_ellell_gammagamma_ellnu.png 59
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 3 | 0 | 1 | $\gamma\gamma$ | $\ell\nu$ |
-HW_LN_ellell_gammagamma_qq.png 60
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 2 | 2 | 0 | $\gamma\gamma$ | $qq$ |
-HZ_LN_ellnu_gammagamma_ellell.png 61
+HZ_LL_ellell_gg_ellell.png 25
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 3 | 0 | 1 | $\gamma\gamma$ | $\ell\ell$ |
-HZ_LN_ellnu_gammagamma_nunu.png 62
+| 4 | 0 | 0 | $gg$ | $\ell\ell$ |
+HZ_LL_ellell_gg_qq.png 26
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 1 | 0 | 3 | $\gamma\gamma$ | $\nu\nu$ |
-HZ_LN_ellnu_gammagamma_qq.png 63
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 1 | 2 | 1 | $\gamma\gamma$ | $qq$ |
-HH_LL_ellell_gg_WW.png 64
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 2 | 0 | $gg$ | $WW$ |
-HH_LL_ellell_gg_ZZ.png 65
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 2 | 0 | $gg$ | $ZZ$ |
-HH_LL_ellell_gg_ellell.png 66
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 4 | 2 | 0 | $gg$ | $\ell\ell$ |
-HH_LL_ellell_gg_gammagamma.png 67
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 2 | 0 | $gg$ | $\gamma\gamma$ |
-HH_LL_ellell_gg_gg.png 68
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 4 | 0 | $gg$ | $gg$ |
-HH_LL_ellell_gg_qq.png 69
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 4 | 0 | $gg$ | $qq$ |
-HW_LL_ellnu_gg_ellnu.png 70
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 2 | 2 | 2 | $gg$ | $\ell\nu$ |
-HW_LL_ellnu_gg_qq.png 71
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 1 | 4 | 1 | $gg$ | $qq$ |
-HZ_LL_ellell_gg_ellell.png 72
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 4 | 2 | 0 | $gg$ | $\ell\ell$ |
-HZ_LL_ellell_gg_nunu.png 73
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 2 | 2 | 2 | $gg$ | $\nu\nu$ |
-HZ_LL_ellell_gg_qq.png 74
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 2 | 4 | 0 | $gg$ | $qq$ |
-HW_LN_ellell_gg_ellnu.png 75
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 3 | 2 | 1 | $gg$ | $\ell\nu$ |
-HW_LN_ellell_gg_qq.png 76
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 2 | 4 | 0 | $gg$ | $qq$ |
-HZ_LN_ellnu_gg_ellell.png 77
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 3 | 2 | 1 | $gg$ | $\ell\ell$ |
-HZ_LN_ellnu_gg_nunu.png 78
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 1 | 2 | 3 | $gg$ | $\nu\nu$ |
-HZ_LN_ellnu_gg_qq.png 79
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 1 | 4 | 1 | $gg$ | $qq$ |
-HH_LL_ellell_qq_WW.png 80
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 2 | 0 | $qq$ | $WW$ |
-HH_LL_ellell_qq_ZZ.png 81
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 2 | 0 | $qq$ | $ZZ$ |
-HH_LL_ellell_qq_ellell.png 82
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 4 | 2 | 0 | $qq$ | $\ell\ell$ |
-HH_LL_ellell_qq_gammagamma.png 83
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 2 | 0 | $qq$ | $\gamma\gamma$ |
-HH_LL_ellell_qq_gg.png 84
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 4 | 0 | $qq$ | $gg$ |
-HH_LL_ellell_qq_qq.png 85
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay |
-| 2 | 4 | 0 | $qq$ | $qq$ |
-HW_LL_ellnu_qq_ellnu.png 86
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 2 | 2 | 2 | $qq$ | $\ell\nu$ |
-HW_LL_ellnu_qq_qq.png 87
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 1 | 4 | 1 | $qq$ | $qq$ |
-HZ_LL_ellell_qq_ellell.png 88
+| 2 | 2 | 0 | $gg$ | $qq$ |
+HZ_LL_ellell_qq_ellell.png 27
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
 | 4 | 2 | 0 | $qq$ | $\ell\ell$ |
-HZ_LL_ellell_qq_nunu.png 89
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 2 | 2 | 2 | $qq$ | $\nu\nu$ |
-HZ_LL_ellell_qq_qq.png 90
+HZ_LL_ellell_qq_qq.png 28
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
 | 2 | 4 | 0 | $qq$ | $qq$ |
-HW_LN_ellell_qq_ellnu.png 91
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 3 | 2 | 1 | $qq$ | $\ell\nu$ |
-HW_LN_ellell_qq_qq.png 92
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $W$ decay |
-| 2 | 4 | 0 | $qq$ | $qq$ |
-HZ_LN_ellnu_qq_ellell.png 93
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 3 | 2 | 1 | $qq$ | $\ell\ell$ |
-HZ_LN_ellnu_qq_nunu.png 94
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 1 | 2 | 3 | $qq$ | $\nu\nu$ |
-HZ_LN_ellnu_qq_qq.png 95
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay |
-| 1 | 4 | 1 | $qq$ | $qq$ |
-WH_LL_nuell_ellnu_WW.png 96
+WH_LL_nuell_qq_ZqqZellell.png 29
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 2 | 0 | 2 | $\ell\nu$ | $WW$ |
-WH_LL_nuell_ellnu_ZZ.png 97
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 2 | 0 | 2 | $\ell\nu$ | $ZZ$ |
-WH_LL_nuell_ellnu_ellell.png 98
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 4 | 0 | 2 | $\ell\nu$ | $\ell\ell$ |
-WH_LL_nuell_ellnu_gammagamma.png 99
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 2 | 0 | 2 | $\ell\nu$ | $\gamma\gamma$ |
-WH_LL_nuell_ellnu_gg.png 100
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 2 | 2 | 2 | $\ell\nu$ | $gg$ |
-WH_LL_nuell_ellnu_qq.png 101
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 2 | 2 | 2 | $\ell\nu$ | $qq$ |
-WW_LL_nunu_ellnu_ellnu.png 102
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 2 | 0 | 4 | $\ell\nu$ | $\ell\nu$ |
-WW_LL_nunu_ellnu_qq.png 103
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 1 | 2 | 3 | $\ell\nu$ | $qq$ |
-WZ_LL_nuell_ellnu_ellell.png 104
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 4 | 0 | 2 | $\ell\nu$ | $\ell\ell$ |
-WZ_LL_nuell_ellnu_nunu.png 105
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 2 | 0 | 4 | $\ell\nu$ | $\nu\nu$ |
-WZ_LL_nuell_ellnu_qq.png 106
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 2 | 2 | 2 | $\ell\nu$ | $qq$ |
-WW_LN_nuell_ellnu_ellnu.png 107
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 3 | 0 | 3 | $\ell\nu$ | $\ell\nu$ |
-WW_LN_nuell_ellnu_qq.png 108
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 2 | 2 | 2 | $\ell\nu$ | $qq$ |
-WZ_LN_nunu_ellnu_ellell.png 109
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 3 | 0 | 3 | $\ell\nu$ | $\ell\ell$ |
-WZ_LN_nunu_ellnu_nunu.png 110
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 1 | 0 | 5 | $\ell\nu$ | $\nu\nu$ |
-WZ_LN_nunu_ellnu_qq.png 111
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 1 | 2 | 3 | $\ell\nu$ | $qq$ |
-WH_LL_nuell_qq_WW.png 112
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 1 | 2 | 1 | $qq$ | $WW$ |
-WH_LL_nuell_qq_ZZ.png 113
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 1 | 2 | 1 | $qq$ | $ZZ$ |
-WH_LL_nuell_qq_ellell.png 114
+| 3 | 4 | 1 | $qq$ | $ZqqZ\ell\ell$ |
+WH_LL_nuell_qq_ellell.png 30
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
 | 3 | 2 | 1 | $qq$ | $\ell\ell$ |
-WH_LL_nuell_qq_gammagamma.png 115
+WH_LL_nuell_qq_gammagamma.png 31
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
 | 1 | 2 | 1 | $qq$ | $\gamma\gamma$ |
-WH_LL_nuell_qq_gg.png 116
+WH_LL_nuell_qq_gg.png 32
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 1 | 4 | 1 | $qq$ | $gg$ |
-WH_LL_nuell_qq_qq.png 117
+| 1 | 2 | 1 | $qq$ | $gg$ |
+WH_LL_nuell_qq_qq.png 33
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
 | 1 | 4 | 1 | $qq$ | $qq$ |
-WW_LL_nunu_qq_ellnu.png 118
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 1 | 2 | 3 | $qq$ | $\ell\nu$ |
-WW_LL_nunu_qq_qq.png 119
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 0 | 4 | 2 | $qq$ | $qq$ |
-WZ_LL_nuell_qq_ellell.png 120
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 3 | 2 | 1 | $qq$ | $\ell\ell$ |
-WZ_LL_nuell_qq_nunu.png 121
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 1 | 2 | 3 | $qq$ | $\nu\nu$ |
-WZ_LL_nuell_qq_qq.png 122
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 1 | 4 | 1 | $qq$ | $qq$ |
-WW_LN_nuell_qq_ellnu.png 123
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 2 | 2 | 2 | $qq$ | $\ell\nu$ |
-WW_LN_nuell_qq_qq.png 124
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 1 | 4 | 1 | $qq$ | $qq$ |
-WZ_LN_nunu_qq_ellell.png 125
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 2 | 2 | 2 | $qq$ | $\ell\ell$ |
-WZ_LN_nunu_qq_nunu.png 126
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 0 | 2 | 4 | $qq$ | $\nu\nu$ |
-WZ_LN_nunu_qq_qq.png 127
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 0 | 4 | 2 | $qq$ | $qq$ |
-ZH_LL_ellell_ellell_WW.png 128
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 4 | 0 | 0 | $\ell\ell$ | $WW$ |
-ZH_LL_ellell_ellell_ZZ.png 129
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 4 | 0 | 0 | $\ell\ell$ | $ZZ$ |
-ZH_LL_ellell_ellell_ellell.png 130
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 6 | 0 | 0 | $\ell\ell$ | $\ell\ell$ |
-ZH_LL_ellell_ellell_gammagamma.png 131
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 4 | 0 | 0 | $\ell\ell$ | $\gamma\gamma$ |
-ZH_LL_ellell_ellell_gg.png 132
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 4 | 2 | 0 | $\ell\ell$ | $gg$ |
-ZH_LL_ellell_ellell_qq.png 133
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 4 | 2 | 0 | $\ell\ell$ | $qq$ |
-ZW_LL_ellnu_ellell_ellnu.png 134
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 4 | 0 | 2 | $\ell\ell$ | $\ell\nu$ |
-ZW_LL_ellnu_ellell_qq.png 135
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 3 | 2 | 1 | $\ell\ell$ | $qq$ |
-ZZ_LL_ellell_ellell_ellell.png 136
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 6 | 0 | 0 | $\ell\ell$ | $\ell\ell$ |
-ZZ_LL_ellell_ellell_nunu.png 137
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 4 | 0 | 2 | $\ell\ell$ | $\nu\nu$ |
-ZZ_LL_ellell_ellell_qq.png 138
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 4 | 2 | 0 | $\ell\ell$ | $qq$ |
-ZW_LN_ellell_ellell_ellnu.png 139
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 5 | 0 | 1 | $\ell\ell$ | $\ell\nu$ |
-ZW_LN_ellell_ellell_qq.png 140
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 4 | 2 | 0 | $\ell\ell$ | $qq$ |
-ZZ_LN_ellnu_ellell_ellell.png 141
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 5 | 0 | 1 | $\ell\ell$ | $\ell\ell$ |
-ZZ_LN_ellnu_ellell_nunu.png 142
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 3 | 0 | 3 | $\ell\ell$ | $\nu\nu$ |
-ZZ_LN_ellnu_ellell_qq.png 143
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 3 | 2 | 1 | $\ell\ell$ | $qq$ |
-ZH_LL_ellell_nunu_WW.png 144
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 2 | 0 | 2 | $\nu\nu$ | $WW$ |
-ZH_LL_ellell_nunu_ZZ.png 145
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 2 | 0 | 2 | $\nu\nu$ | $ZZ$ |
-ZH_LL_ellell_nunu_ellell.png 146
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 4 | 0 | 2 | $\nu\nu$ | $\ell\ell$ |
-ZH_LL_ellell_nunu_gammagamma.png 147
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 2 | 0 | 2 | $\nu\nu$ | $\gamma\gamma$ |
-ZH_LL_ellell_nunu_gg.png 148
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 2 | 2 | 2 | $\nu\nu$ | $gg$ |
-ZH_LL_ellell_nunu_qq.png 149
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 2 | 2 | 2 | $\nu\nu$ | $qq$ |
-ZW_LL_ellnu_nunu_ellnu.png 150
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 2 | 0 | 4 | $\nu\nu$ | $\ell\nu$ |
-ZW_LL_ellnu_nunu_qq.png 151
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 1 | 2 | 3 | $\nu\nu$ | $qq$ |
-ZZ_LL_ellell_nunu_ellell.png 152
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 4 | 0 | 2 | $\nu\nu$ | $\ell\ell$ |
-ZZ_LL_ellell_nunu_nunu.png 153
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 2 | 0 | 4 | $\nu\nu$ | $\nu\nu$ |
-ZZ_LL_ellell_nunu_qq.png 154
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 2 | 2 | 2 | $\nu\nu$ | $qq$ |
-ZW_LN_ellell_nunu_ellnu.png 155
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 3 | 0 | 3 | $\nu\nu$ | $\ell\nu$ |
-ZW_LN_ellell_nunu_qq.png 156
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 2 | 2 | 2 | $\nu\nu$ | $qq$ |
-ZZ_LN_ellnu_nunu_ellell.png 157
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 3 | 0 | 3 | $\nu\nu$ | $\ell\ell$ |
-ZZ_LN_ellnu_nunu_nunu.png 158
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 1 | 0 | 5 | $\nu\nu$ | $\nu\nu$ |
-ZZ_LN_ellnu_nunu_qq.png 159
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 1 | 2 | 3 | $\nu\nu$ | $qq$ |
-ZH_LL_ellell_qq_WW.png 160
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 2 | 2 | 0 | $qq$ | $WW$ |
-ZH_LL_ellell_qq_ZZ.png 161
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 2 | 2 | 0 | $qq$ | $ZZ$ |
-ZH_LL_ellell_qq_ellell.png 162
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 4 | 2 | 0 | $qq$ | $\ell\ell$ |
-ZH_LL_ellell_qq_gammagamma.png 163
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 2 | 2 | 0 | $qq$ | $\gamma\gamma$ |
-ZH_LL_ellell_qq_gg.png 164
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 2 | 4 | 0 | $qq$ | $gg$ |
-ZH_LL_ellell_qq_qq.png 165
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 2 | 4 | 0 | $qq$ | $qq$ |
-ZW_LL_ellnu_qq_ellnu.png 166
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 2 | 2 | 2 | $qq$ | $\ell\nu$ |
-ZW_LL_ellnu_qq_qq.png 167
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 1 | 4 | 1 | $qq$ | $qq$ |
-ZZ_LL_ellell_qq_ellell.png 168
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 4 | 2 | 0 | $qq$ | $\ell\ell$ |
-ZZ_LL_ellell_qq_nunu.png 169
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 2 | 2 | 2 | $qq$ | $\nu\nu$ |
-ZZ_LL_ellell_qq_qq.png 170
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 2 | 4 | 0 | $qq$ | $qq$ |
-ZW_LN_ellell_qq_ellnu.png 171
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 3 | 2 | 1 | $qq$ | $\ell\nu$ |
-ZW_LN_ellell_qq_qq.png 172
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 2 | 4 | 0 | $qq$ | $qq$ |
-ZZ_LN_ellnu_qq_ellell.png 173
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 3 | 2 | 1 | $qq$ | $\ell\ell$ |
-ZZ_LN_ellnu_qq_nunu.png 174
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 1 | 2 | 3 | $qq$ | $\nu\nu$ |
-ZZ_LN_ellnu_qq_qq.png 175
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 1 | 4 | 1 | $qq$ | $qq$ |
-WH_NL_ellell_ellnu_WW.png 176
+WH_NL_ellell_ellnu_WqqWqq.png 34
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 3 | 0 | 1 | $\ell\nu$ | $WW$ |
-WH_NL_ellell_ellnu_ZZ.png 177
+| 3 | 4 | 1 | $\ell\nu$ | $WqqWqq$ |
+WH_NL_ellell_ellnu_ZqqZqq.png 35
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 3 | 0 | 1 | $\ell\nu$ | $ZZ$ |
-WH_NL_ellell_ellnu_ellell.png 178
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 5 | 0 | 1 | $\ell\nu$ | $\ell\ell$ |
-WH_NL_ellell_ellnu_gammagamma.png 179
+| 3 | 4 | 1 | $\ell\nu$ | $ZqqZqq$ |
+WH_NL_ellell_ellnu_gammagamma.png 36
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
 | 3 | 0 | 1 | $\ell\nu$ | $\gamma\gamma$ |
-WH_NL_ellell_ellnu_gg.png 180
+WH_NL_ellell_ellnu_gg.png 37
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 3 | 2 | 1 | $\ell\nu$ | $gg$ |
-WH_NL_ellell_ellnu_qq.png 181
+| 3 | 0 | 1 | $\ell\nu$ | $gg$ |
+WH_NL_ellell_ellnu_qq.png 38
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
 | 3 | 2 | 1 | $\ell\nu$ | $qq$ |
-WW_NL_ellnu_ellnu_ellnu.png 182
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 3 | 0 | 3 | $\ell\nu$ | $\ell\nu$ |
-WW_NL_ellnu_ellnu_qq.png 183
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 2 | 2 | 2 | $\ell\nu$ | $qq$ |
-WZ_NL_ellell_ellnu_ellell.png 184
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 5 | 0 | 1 | $\ell\nu$ | $\ell\ell$ |
-WZ_NL_ellell_ellnu_nunu.png 185
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 3 | 0 | 3 | $\ell\nu$ | $\nu\nu$ |
-WZ_NL_ellell_ellnu_qq.png 186
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 3 | 2 | 1 | $\ell\nu$ | $qq$ |
-WW_NN_ellell_ellnu_ellnu.png 187
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 4 | 0 | 2 | $\ell\nu$ | $\ell\nu$ |
-WW_NN_ellell_ellnu_qq.png 188
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 3 | 2 | 1 | $\ell\nu$ | $qq$ |
-WZ_NN_ellnu_ellnu_ellell.png 189
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 4 | 0 | 2 | $\ell\nu$ | $\ell\ell$ |
-WZ_NN_ellnu_ellnu_nunu.png 190
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 2 | 0 | 4 | $\ell\nu$ | $\nu\nu$ |
-WZ_NN_ellnu_ellnu_qq.png 191
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 2 | 2 | 2 | $\ell\nu$ | $qq$ |
-WH_NL_ellell_qq_WW.png 192
+WH_NL_ellell_qq_WqqWellnu.png 39
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 2 | 2 | 0 | $qq$ | $WW$ |
-WH_NL_ellell_qq_ZZ.png 193
+| 3 | 4 | 1 | $qq$ | $WqqW\ell\nu$ |
+WH_NL_ellell_qq_ZqqZellell.png 40
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 2 | 2 | 0 | $qq$ | $ZZ$ |
-WH_NL_ellell_qq_ellell.png 194
+| 4 | 4 | 0 | $qq$ | $ZqqZ\ell\ell$ |
+WH_NL_ellell_qq_ellell.png 41
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
 | 4 | 2 | 0 | $qq$ | $\ell\ell$ |
-WH_NL_ellell_qq_gammagamma.png 195
+WH_NL_ellell_qq_gammagamma.png 42
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
 | 2 | 2 | 0 | $qq$ | $\gamma\gamma$ |
-WH_NL_ellell_qq_gg.png 196
+WH_NL_ellell_qq_gg.png 43
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
-| 2 | 4 | 0 | $qq$ | $gg$ |
-WH_NL_ellell_qq_qq.png 197
+| 2 | 2 | 0 | $qq$ | $gg$ |
+WH_NL_ellell_qq_qq.png 44
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay |
 | 2 | 4 | 0 | $qq$ | $qq$ |
-WW_NL_ellnu_qq_ellnu.png 198
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 2 | 2 | 2 | $qq$ | $\ell\nu$ |
-WW_NL_ellnu_qq_qq.png 199
+WW_NL_ellnu_qq_qq.png 45
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
 | 1 | 4 | 1 | $qq$ | $qq$ |
-WZ_NL_ellell_qq_ellell.png 200
+WW_NN_ellell_ellnu_qq.png 46
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
+| 3 | 2 | 1 | $\ell\nu$ | $qq$ |
+WW_NN_ellell_qq_qq.png 47
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
+| 2 | 4 | 0 | $qq$ | $qq$ |
+WZ_LL_nuell_qq_ellell.png 48
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
+| 3 | 2 | 1 | $qq$ | $\ell\ell$ |
+WZ_LL_nuell_qq_qq.png 49
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
+| 1 | 4 | 1 | $qq$ | $qq$ |
+WZ_NL_ellell_ellnu_qq.png 50
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
+| 3 | 2 | 1 | $\ell\nu$ | $qq$ |
+WZ_NL_ellell_qq_ellell.png 51
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
 | 4 | 2 | 0 | $qq$ | $\ell\ell$ |
-WZ_NL_ellell_qq_nunu.png 201
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 2 | 2 | 2 | $qq$ | $\nu\nu$ |
-WZ_NL_ellell_qq_qq.png 202
+WZ_NL_ellell_qq_qq.png 52
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
 | 2 | 4 | 0 | $qq$ | $qq$ |
-WW_NN_ellell_qq_ellnu.png 203
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
-| 3 | 2 | 1 | $qq$ | $\ell\nu$ |
-WW_NN_ellell_qq_qq.png 204
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay |
+ZZ_LL_ellell_ellell_qq.png 53
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
+| 4 | 2 | 0 | $\ell\ell$ | $qq$ |
+ZZ_LL_ellell_qq_qq.png 54
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
 | 2 | 4 | 0 | $qq$ | $qq$ |
-WZ_NN_ellnu_qq_ellell.png 205
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 3 | 2 | 1 | $qq$ | $\ell\ell$ |
-WZ_NN_ellnu_qq_nunu.png 206
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 1 | 2 | 3 | $qq$ | $\nu\nu$ |
-WZ_NN_ellnu_qq_qq.png 207
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay |
-| 1 | 4 | 1 | $qq$ | $qq$ |
-ZH_NL_nuell_ellell_WW.png 208
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 3 | 0 | 1 | $\ell\ell$ | $WW$ |
-ZH_NL_nuell_ellell_ZZ.png 209
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 3 | 0 | 1 | $\ell\ell$ | $ZZ$ |
-ZH_NL_nuell_ellell_ellell.png 210
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 5 | 0 | 1 | $\ell\ell$ | $\ell\ell$ |
-ZH_NL_nuell_ellell_gammagamma.png 211
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 3 | 0 | 1 | $\ell\ell$ | $\gamma\gamma$ |
-ZH_NL_nuell_ellell_gg.png 212
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 3 | 2 | 1 | $\ell\ell$ | $gg$ |
-ZH_NL_nuell_ellell_qq.png 213
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 3 | 2 | 1 | $\ell\ell$ | $qq$ |
-ZW_NL_nunu_ellell_ellnu.png 214
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 3 | 0 | 3 | $\ell\ell$ | $\ell\nu$ |
-ZW_NL_nunu_ellell_qq.png 215
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 2 | 2 | 2 | $\ell\ell$ | $qq$ |
-ZZ_NL_nuell_ellell_ellell.png 216
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 5 | 0 | 1 | $\ell\ell$ | $\ell\ell$ |
-ZZ_NL_nuell_ellell_nunu.png 217
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 3 | 0 | 3 | $\ell\ell$ | $\nu\nu$ |
-ZZ_NL_nuell_ellell_qq.png 218
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 3 | 2 | 1 | $\ell\ell$ | $qq$ |
-ZW_NN_nuell_ellell_ellnu.png 219
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 4 | 0 | 2 | $\ell\ell$ | $\ell\nu$ |
-ZW_NN_nuell_ellell_qq.png 220
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 3 | 2 | 1 | $\ell\ell$ | $qq$ |
-ZZ_NN_nunu_ellell_ellell.png 221
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 4 | 0 | 2 | $\ell\ell$ | $\ell\ell$ |
-ZZ_NN_nunu_ellell_nunu.png 222
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 2 | 0 | 4 | $\ell\ell$ | $\nu\nu$ |
-ZZ_NN_nunu_ellell_qq.png 223
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 2 | 2 | 2 | $\ell\ell$ | $qq$ |
-ZH_NL_nuell_nunu_WW.png 224
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 1 | 0 | 3 | $\nu\nu$ | $WW$ |
-ZH_NL_nuell_nunu_ZZ.png 225
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 1 | 0 | 3 | $\nu\nu$ | $ZZ$ |
-ZH_NL_nuell_nunu_ellell.png 226
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 3 | 0 | 3 | $\nu\nu$ | $\ell\ell$ |
-ZH_NL_nuell_nunu_gammagamma.png 227
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 1 | 0 | 3 | $\nu\nu$ | $\gamma\gamma$ |
-ZH_NL_nuell_nunu_gg.png 228
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 1 | 2 | 3 | $\nu\nu$ | $gg$ |
-ZH_NL_nuell_nunu_qq.png 229
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 1 | 2 | 3 | $\nu\nu$ | $qq$ |
-ZW_NL_nunu_nunu_ellnu.png 230
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 1 | 0 | 5 | $\nu\nu$ | $\ell\nu$ |
-ZW_NL_nunu_nunu_qq.png 231
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 0 | 2 | 4 | $\nu\nu$ | $qq$ |
-ZZ_NL_nuell_nunu_ellell.png 232
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 3 | 0 | 3 | $\nu\nu$ | $\ell\ell$ |
-ZZ_NL_nuell_nunu_nunu.png 233
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 1 | 0 | 5 | $\nu\nu$ | $\nu\nu$ |
-ZZ_NL_nuell_nunu_qq.png 234
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 1 | 2 | 3 | $\nu\nu$ | $qq$ |
-ZW_NN_nuell_nunu_ellnu.png 235
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 2 | 0 | 4 | $\nu\nu$ | $\ell\nu$ |
-ZW_NN_nuell_nunu_qq.png 236
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 1 | 2 | 3 | $\nu\nu$ | $qq$ |
-ZZ_NN_nunu_nunu_ellell.png 237
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 2 | 0 | 4 | $\nu\nu$ | $\ell\ell$ |
-ZZ_NN_nunu_nunu_nunu.png 238
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 0 | 0 | 6 | $\nu\nu$ | $\nu\nu$ |
-ZZ_NN_nunu_nunu_qq.png 239
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 0 | 2 | 4 | $\nu\nu$ | $qq$ |
-ZH_NL_nuell_qq_WW.png 240
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 1 | 2 | 1 | $qq$ | $WW$ |
-ZH_NL_nuell_qq_ZZ.png 241
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 1 | 2 | 1 | $qq$ | $ZZ$ |
-ZH_NL_nuell_qq_ellell.png 242
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 3 | 2 | 1 | $qq$ | $\ell\ell$ |
-ZH_NL_nuell_qq_gammagamma.png 243
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 1 | 2 | 1 | $qq$ | $\gamma\gamma$ |
-ZH_NL_nuell_qq_gg.png 244
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 1 | 4 | 1 | $qq$ | $gg$ |
-ZH_NL_nuell_qq_qq.png 245
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $H$ decay |
-| 1 | 4 | 1 | $qq$ | $qq$ |
-ZW_NL_nunu_qq_ellnu.png 246
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 1 | 2 | 3 | $qq$ | $\ell\nu$ |
-ZW_NL_nunu_qq_qq.png 247
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 0 | 4 | 2 | $qq$ | $qq$ |
-ZZ_NL_nuell_qq_ellell.png 248
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 3 | 2 | 1 | $qq$ | $\ell\ell$ |
-ZZ_NL_nuell_qq_nunu.png 249
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 1 | 2 | 3 | $qq$ | $\nu\nu$ |
-ZZ_NL_nuell_qq_qq.png 250
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 1 | 4 | 1 | $qq$ | $qq$ |
-ZW_NN_nuell_qq_ellnu.png 251
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 2 | 2 | 2 | $qq$ | $\ell\nu$ |
-ZW_NN_nuell_qq_qq.png 252
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $W$ decay |
-| 1 | 4 | 1 | $qq$ | $qq$ |
-ZZ_NN_nunu_qq_ellell.png 253
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 2 | 2 | 2 | $qq$ | $\ell\ell$ |
-ZZ_NN_nunu_qq_nunu.png 254
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 0 | 2 | 4 | $qq$ | $\nu\nu$ |
-ZZ_NN_nunu_qq_qq.png 255
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay |
-| 0 | 4 | 2 | $qq$ | $qq$ |

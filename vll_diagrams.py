@@ -20,7 +20,6 @@ Makes VLL decay chain diagrams
     H -> g g
 
 """
-from re import L
 import matplotlib.pyplot as plt
 from feynman import Diagram
 
@@ -123,12 +122,24 @@ counter = 0
 final_state_lines = []
 plotted = []
 
+info_lines = []
+
 for middle_boson_label in sorted(middle_boson_labels):
-    for vll_type in sorted(['LL', 'NL', 'NN']):
-        upper_vll_label = r"$\ell'$" if vll_type[0]=='L' else r"$\nu'$"
-        lower_vll_label = r"$\ell'$" if vll_type[1]=='L' else r"$\nu'$"
-        same_vll_type = vll_type in ['LL', 'NN']
-        for vll_decay_type in sorted(['WW', 'WZ', 'ZZ', 'WH', 'HZ', 'HH']):
+    for vll_decay_type in sorted(['WW', 'WZ', 'ZZ', 'WH', 'HZ', 'HH']):
+        if vll_decay_type in ['WW', 'HH']:
+            vll_types = ['LL', 'NL', 'NN']
+        elif vll_decay_type in ['ZZ']:
+            vll_types = ['LL']
+        elif vll_decay_type in ['WZ', 'HZ']:
+            vll_types = ['LL', 'NL']
+        elif vll_decay_type in ['WH']:
+            vll_types = ['LL', 'NL', 'NN', 'LN']
+
+        for vll_type in sorted(['LL', 'NL', 'NN']):
+            upper_vll_label = r"$\ell'$" if vll_type[0]=='L' else r"$\nu'$"
+            lower_vll_label = r"$\ell'$" if vll_type[1]=='L' else r"$\nu'$"
+            same_vll_type = vll_type in ['LL', 'NN']
+        
             upper_boson_label = "$"+vll_decay_type[0]+"$"
             lower_boson_label = "$"+vll_decay_type[1]+"$"
             same_boson = upper_boson_label==lower_boson_label
@@ -141,7 +152,10 @@ for middle_boson_label in sorted(middle_boson_labels):
                     n_neutrinos_upper = 0
                     n_jets_lower = 0
                     n_neutrinos_lower = 0
-                    n_photons = 0
+                    n_photons_upper = 0
+                    n_photons_lower = 0
+                    n_gluons_upper = 0
+                    n_gluons_lower = 0
 
                     # each vll can decay into either H W or Z + a lepton
                     # figure out what kind of lepton you'll have
@@ -162,14 +176,16 @@ for middle_boson_label in sorted(middle_boson_labels):
 
                     # count decay product states
                     for udp in [up_dp1, up_dp2]:
-                        if udp in [r"$q$", r'$g$']:
+                        if udp == r"$q$":
                             n_jets_upper += 1
+                        elif udp == r'$g$':
+                            n_gluons_upper += 1
                         elif udp == r'$\ell$':
                             n_leptons += 1
                         elif udp == r'$\nu$':
                             n_neutrinos_upper += 1
                         elif udp == r'$\gamma$':
-                            n_photons += 1
+                            n_photons_upper += 1
                         elif udp == r'$Zqq$':
                             n_jets_upper += 2
                         elif udp == r'$Z\ell\ell$':
@@ -177,19 +193,21 @@ for middle_boson_label in sorted(middle_boson_labels):
                         elif udp == r'$Z\nu\nu$':
                             n_neutrinos_upper += 2
                         elif udp == r'$Wqq$':
-                            n_jets_upper += 1
+                            n_jets_upper += 2
                         elif udp == r'$W\ell\nu$':
                             n_leptons += 1
                             n_neutrinos_upper += 1
                     for ldp in [dn_dp1, dn_dp2]:
-                        if ldp in [r"$q$", r'$g$']:
+                        if ldp in r"$q$":
                             n_jets_lower += 1
+                        elif ldp == r'$g$':
+                            n_gluons_lower += 1
                         elif ldp == r'$\ell$':
                             n_leptons += 1
                         elif ldp == r'$\nu$':
                             n_neutrinos_lower += 1
                         elif ldp == r'$\gamma$':
-                            n_photons += 1
+                            n_photons_lower += 1
                         elif ldp == r'$Zqq$':
                             n_jets_lower += 2
                         elif ldp == r'$Z\ell\ell$':
@@ -197,7 +215,7 @@ for middle_boson_label in sorted(middle_boson_labels):
                         elif ldp == r'$Z\nu\nu$':
                             n_neutrinos_lower += 2
                         elif ldp == r'$Wqq$':
-                            n_jets_lower += 1
+                            n_jets_lower += 2
                         elif ldp == r'$W\ell\nu$':
                             n_leptons += 1
                             n_neutrinos_lower += 1
@@ -207,7 +225,7 @@ for middle_boson_label in sorted(middle_boson_labels):
                     # we assert no nu -> Z + nu earlier
                     n_jets = n_jets_upper + n_jets_lower
                     n_neutrinos = n_neutrinos_upper + n_neutrinos_lower
-                    if n_jets > 3:
+                    if n_jets > 4:
                         continue
                     if n_leptons > 4:
                         continue
@@ -215,7 +233,10 @@ for middle_boson_label in sorted(middle_boson_labels):
                         continue
 
                     # make sure at least one branch is reconstructable
-                    if (n_neutrinos_lower + n_jets_lower > 1) and (n_neutrinos_upper + n_jets_upper > 1):
+                    lower_reconstructable = (n_neutrinos_lower <= 1) and (n_photons_lower == 0) and (n_gluons_lower == 0)
+                    upper_reconstructable = (n_neutrinos_upper <= 1) and (n_photons_upper == 0) and (n_gluons_upper == 0)
+                    
+                    if not (lower_reconstructable or upper_reconstructable):
                         continue
 
                     # also check if we've plotted a duplicate:
@@ -305,11 +326,13 @@ for middle_boson_label in sorted(middle_boson_labels):
                     plt.savefig(fig_title, dpi=300)
                     plt.cla(); plt.clf()
                     plt.close()
-                    print(fig_title, counter)
+                    info_lines.append(fig_title + " " + str(counter))
+                    print(fig_title + " " + str(counter))
+                    print(upper_reconstructable, lower_reconstructable)
                     # save info about state
-                    print(r'| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | '+upper_boson_label+r' decay | '+lower_boson_label+r' decay |')
+                    info_lines.append(r'| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | '+upper_boson_label+r' decay | '+lower_boson_label+r' decay |')
 
-                    print(f'| {n_leptons} | {n_jets} | {n_neutrinos} | {up_dp1}{up_dp2} | {dn_dp1}{dn_dp2} |'.replace('$$', ''))
+                    info_lines.append(f'| {n_leptons} | {n_jets} | {n_neutrinos} | {up_dp1}{up_dp2} | {dn_dp1}{dn_dp2} |'.replace('$$', ''))
 
                     counter += 1
                     final_state_line = strip(f"{upper_decay_lepton},{up_dp1},{up_dp2},{lower_decay_lepton},{dn_dp1},{dn_dp2}")
@@ -319,3 +342,6 @@ for middle_boson_label in sorted(middle_boson_labels):
 
 with open('final_states.csv', 'w+') as final_state_file:
     final_state_file.write('\n'.join(final_state_lines))
+
+with open('info.txt', 'w+') as info_file:
+    info_file.write('\n'.join(info_lines))

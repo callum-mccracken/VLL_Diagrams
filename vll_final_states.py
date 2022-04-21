@@ -17,6 +17,7 @@ file_lines = lines[0::3]
 legend_lines = lines[1::3]
 data_lines = lines[2::3]
 
+output_lines = []
 
 # organize data into tables
 tables = {}
@@ -32,34 +33,30 @@ for file_line, legend_line, data_line in zip(file_lines, legend_lines, data_line
         tables[vll_decaytype][vll_type] = [legend_line]
         tables[vll_decaytype][vll_type].append('| --- | --- | --- | --- | --- |')
     else:
-        #print(legend_line)
-        #print(tables[vll_decaytype][vll_type][0])
         assert legend_line == tables[vll_decaytype][vll_type][0]
     # add data line
     tables[vll_decaytype][vll_type].append(data_line)
 
 # print tables
-for vll_decaytype in ['WW', 'ZZ', 'WZ']:
-    order_matters = False
-    vll_types = ['LL', 'NN', 'NL']
-    if vll_decaytype == 'WZ':
-        order_matters = True
-        vll_types.append('LN')
-    for vll_type in vll_types:
-        print(f'VLL_decaytype = {vll_decaytype}, VLL_type = {vll_type}')
-        print()
+for vll_decaytype in tables.keys():
+    for vll_type in tables[vll_decaytype].keys():
+        output_lines.append(f'VLL_decaytype = {vll_decaytype}, VLL_type = {vll_type}')
+        output_lines.append('')
         printed = []
         for line in tables[vll_decaytype][vll_type]:
             line = line.replace('\n', '')
             if '---' in line or 'decay' in line:
-                print(line)
-            elif order_matters == True:
-                print(line)
+                output_lines.append(line)
             else:
                 stripped = line.replace('|', '').replace('  ', ' ').strip()
                 n_l, n_j, n_n, dp1, dp2 = stripped.split()
                 potential_line = set([dp1, dp2])
                 if potential_line not in printed:
-                    print(line)
+                    output_lines.append(line)
                     printed.append(potential_line)
-        print()
+        output_lines.append('')
+
+output_text = '\n'.join(output_lines)
+
+with open('tables.md', 'w+') as output_file:
+    output_file.write(output_text)

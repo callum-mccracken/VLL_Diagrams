@@ -31,28 +31,27 @@ fermion_kwargs = {'arrow': True}
 
 boson_decay_products = {
     r'$W$': [
-        (r'$q$', r'$q$'), 
+        (r'$q$', r'$q$'),
         (r'$\ell$', r'$\nu$')
         ],
     r'$Z$': [
-        (r'$q$', r'$q$'), 
-        (r'$\ell$', r'$\ell$'), 
+        (r'$q$', r'$q$'),
+        (r'$\ell$', r'$\ell$'),
         (r'$\nu$', r'$\nu$')
         ],
     r'$H$': [
-        (r'$\ell$', r'$\ell$'), 
-        (r'$g$', r'$g$'),  
-        (r'$q$', r'$q$'), 
-        (r'$\gamma$', r'$\gamma$'), 
+        (r'$\ell$', r'$\ell$'),
+        (r'$g$', r'$g$'),
+        (r'$q$', r'$q$'),
+        (r'$\gamma$', r'$\gamma$'),
         (r'$Zqq$', r'$Zqq$'),
         (r'$Zqq$', r'$Z\ell\ell$'),
         (r'$Zqq$', r'$Z\nu\nu$'),
         (r'$Z\ell\ell$', r'$Z\ell\ell$'),
         (r'$Z\ell\ell$', r'$Z\nu\nu$'),
-        (r'$Z\ell\ell$', r'$Z\nu\nu$'),
-        (r'$Wqq$', r'$Wqq$'), 
-        (r'$Wqq$', r'$W\ell\nu$'), 
-        (r'$W\ell\nu$', r'$W\ell\nu$'), 
+        (r'$Wqq$', r'$Wqq$'),
+        (r'$Wqq$', r'$W\ell\nu$'),
+        (r'$W\ell\nu$', r'$W\ell\nu$'),
         ]
 }
 
@@ -323,7 +322,7 @@ for middle_boson_label in sorted(middle_boson_labels):
                         lower_vll_letter = 'N'
 
                     fig_title = strip(f'{upper_boson_label}{lower_boson_label}_{upper_vll_letter}{lower_vll_letter}_{upper_decay_lepton}{lower_decay_lepton}_{up_dp1}{up_dp2}_{dn_dp1}{dn_dp2}.png')
-                    plt.savefig(fig_title, dpi=300)
+                    plt.savefig(fig_title, dpi=300, transparent=True)
                     plt.cla(); plt.clf()
                     plt.close()
                     info_lines.append(fig_title + " " + str(counter))

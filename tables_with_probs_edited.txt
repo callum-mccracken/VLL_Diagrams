@@ -1,0 +1,56 @@
+VLL_decaytype = HH, VLL_type = LL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay | prob |
+| --- | --- | --- | --- | --- | --- |
+| 2 | 4 | 0 | $qq$ | $qq$ | 0.44 |
+
+VLL_decaytype = HZ, VLL_type = LL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay | prob |
+| --- | --- | --- | --- | --- | --- |
+| 2 | 4 | 0 | $qq$ | $qq$ | 0.46 |
+
+VLL_decaytype = WH, VLL_type = LL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay | prob |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 4 | 1 | $qq$ | $qq$ | 0.46 |
+
+VLL_decaytype = WH, VLL_type = NL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay | prob |
+| --- | --- | --- | --- | --- | --- |
+| 3 | 2 | 1 | $\ell\nu$ | $qq$ | 0.20 |
+| 2 | 4 | 0 | $qq$ | $qq$ | 0.46 |
+
+VLL_decaytype = WW, VLL_type = NL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay | prob |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 4 | 1 | $qq$ | $qq$ | 0.49 |
+
+VLL_decaytype = WW, VLL_type = NN
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay | prob |
+| --- | --- | --- | --- | --- | --- |
+| 3 | 2 | 1 | $\ell\nu$ | $qq$ | 0.21 |
+| 2 | 4 | 0 | $qq$ | $qq$ | 0.49 |
+
+VLL_decaytype = WZ, VLL_type = LL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay | prob |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 4 | 1 | $qq$ | $qq$ | 0.49 |
+
+VLL_decaytype = WZ, VLL_type = NL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay | prob |
+| --- | --- | --- | --- | --- | --- |
+| 3 | 2 | 1 | $\ell\nu$ | $qq$ | 0.21 |
+| 2 | 4 | 0 | $qq$ | $qq$ | 0.49 |
+
+VLL_decaytype = ZZ, VLL_type = LL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay | prob |
+| --- | --- | --- | --- | --- | --- |
+| 2 | 4 | 0 | $qq$ | $qq$ | 0.49 |

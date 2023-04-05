@@ -1,102 +1,98 @@
-VLL_decaytype = WW, VLL_type = LL
+VLL_decaytype = HH, VLL_type = LL
 
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay | prob |
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $H$ decay | prob |
 | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 4 | $\ell\nu$ | $\ell\nu$ | 0.09 |
-| 1 | 2 | 3 | $\ell\nu$ | $qq$ | 0.21 |
-| 0 | 4 | 2 | $qq$ | $qq$ | 0.49 |
+| 3 | 2 | 1 | $WqqW\ell\nu$ | $\gamma\gamma$ | 0.00 |
+| 3 | 2 | 1 | $WqqW\ell\nu$ | $gg$ | 0.00 |
+| 3 | 4 | 1 | $WqqW\ell\nu$ | $qq$ | 0.03 |
+| 4 | 4 | 0 | $WqqWqq$ | $\ell\ell$ | 0.00 |
+| 2 | 4 | 0 | $WqqWqq$ | $\gamma\gamma$ | 0.00 |
+| 2 | 4 | 0 | $WqqWqq$ | $gg$ | 0.01 |
+| 4 | 2 | 0 | $ZqqZ\ell\ell$ | $\gamma\gamma$ | 0.00 |
+| 4 | 2 | 0 | $ZqqZ\ell\ell$ | $gg$ | 0.00 |
+| 4 | 4 | 0 | $ZqqZ\ell\ell$ | $qq$ | 0.00 |
+| 4 | 4 | 0 | $ZqqZqq$ | $\ell\ell$ | 0.00 |
+| 2 | 4 | 0 | $ZqqZqq$ | $\gamma\gamma$ | 0.00 |
+| 2 | 4 | 0 | $ZqqZqq$ | $gg$ | 0.00 |
+| 4 | 0 | 0 | $\ell\ell$ | $\gamma\gamma$ | 0.00 |
+| 4 | 0 | 0 | $\ell\ell$ | $gg$ | 0.00 |
+| 4 | 2 | 0 | $\ell\ell$ | $qq$ | 0.00 |
+| 2 | 2 | 0 | $\gamma\gamma$ | $qq$ | 0.00 |
+| 2 | 2 | 0 | $gg$ | $qq$ | 0.06 |
+| 2 | 4 | 0 | $qq$ | $qq$ | 0.44 |
 
-VLL_decaytype = WW, VLL_type = NN
+VLL_decaytype = HZ, VLL_type = LL
 
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay | prob |
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $H$ decay | $Z$ decay | prob |
 | --- | --- | --- | --- | --- | --- |
-| 4 | 0 | 2 | $\ell\nu$ | $\ell\nu$ | 0.09 |
-| 3 | 2 | 1 | $\ell\nu$ | $qq$ | 0.21 |
-| 2 | 4 | 0 | $qq$ | $qq$ | 0.49 |
+| 3 | 4 | 1 | $WqqW\ell\nu$ | $qq$ | 0.03 |
+| 4 | 4 | 0 | $WqqWqq$ | $\ell\ell$ | 0.01 |
+| 4 | 4 | 0 | $ZqqZ\ell\ell$ | $qq$ | 0.00 |
+| 4 | 4 | 0 | $ZqqZqq$ | $\ell\ell$ | 0.00 |
+| 4 | 2 | 0 | $\ell\ell$ | $qq$ | 0.00 |
+| 4 | 0 | 0 | $\gamma\gamma$ | $\ell\ell$ | 0.00 |
+| 2 | 2 | 0 | $\gamma\gamma$ | $qq$ | 0.00 |
+| 4 | 0 | 0 | $gg$ | $\ell\ell$ | 0.01 |
+| 2 | 2 | 0 | $gg$ | $qq$ | 0.06 |
+| 2 | 4 | 0 | $qq$ | $qq$ | 0.46 |
+
+VLL_decaytype = WH, VLL_type = LL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay | prob |
+| --- | --- | --- | --- | --- | --- |
+| 3 | 4 | 1 | $qq$ | $ZqqZ\ell\ell$ | 0.00 |
+| 3 | 2 | 1 | $qq$ | $\ell\ell$ | 0.00 |
+| 1 | 2 | 1 | $qq$ | $\gamma\gamma$ | 0.00 |
+| 1 | 2 | 1 | $qq$ | $gg$ | 0.06 |
+| 1 | 4 | 1 | $qq$ | $qq$ | 0.46 |
+
+VLL_decaytype = WH, VLL_type = NL
+
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $H$ decay | prob |
+| --- | --- | --- | --- | --- | --- |
+| 3 | 4 | 1 | $\ell\nu$ | $WqqWqq$ | 0.03 |
+| 3 | 4 | 1 | $\ell\nu$ | $ZqqZqq$ | 0.00 |
+| 3 | 0 | 1 | $\ell\nu$ | $\gamma\gamma$ | 0.00 |
+| 3 | 0 | 1 | $\ell\nu$ | $gg$ | 0.03 |
+| 3 | 2 | 1 | $\ell\nu$ | $qq$ | 0.20 |
+| 3 | 4 | 1 | $qq$ | $WqqW\ell\nu$ | 0.03 |
+| 4 | 4 | 0 | $qq$ | $ZqqZ\ell\ell$ | 0.00 |
+| 4 | 2 | 0 | $qq$ | $\ell\ell$ | 0.00 |
+| 2 | 2 | 0 | $qq$ | $\gamma\gamma$ | 0.00 |
+| 2 | 2 | 0 | $qq$ | $gg$ | 0.06 |
+| 2 | 4 | 0 | $qq$ | $qq$ | 0.46 |
 
 VLL_decaytype = WW, VLL_type = NL
 
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay | prob |
 | --- | --- | --- | --- | --- | --- |
-| 3 | 0 | 3 | $\ell\nu$ | $\ell\nu$ | 0.09 |
-| 2 | 2 | 2 | $\ell\nu$ | $qq$ | 0.21 |
 | 1 | 4 | 1 | $qq$ | $qq$ | 0.49 |
 
-VLL_decaytype = ZZ, VLL_type = LL
+VLL_decaytype = WW, VLL_type = NN
 
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay | prob |
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $W$ decay | prob |
 | --- | --- | --- | --- | --- | --- |
-| 6 | 0 | 0 | $\ell\ell$ | $\ell\ell$ | 0.01 |
-| 4 | 0 | 2 | $\ell\ell$ | $\nu\nu$ | 0.02 |
-| 4 | 2 | 0 | $\ell\ell$ | $qq$ | 0.07 |
-| 2 | 0 | 4 | $\nu\nu$ | $\nu\nu$ | 0.04 |
-| 2 | 2 | 2 | $\nu\nu$ | $qq$ | 0.14 |
+| 3 | 2 | 1 | $\ell\nu$ | $qq$ | 0.21 |
 | 2 | 4 | 0 | $qq$ | $qq$ | 0.49 |
-
-VLL_decaytype = ZZ, VLL_type = NN
-
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay | prob |
-| --- | --- | --- | --- | --- | --- |
-| 4 | 0 | 2 | $\ell\ell$ | $\ell\ell$ | 0.01 |
-| 2 | 0 | 4 | $\ell\ell$ | $\nu\nu$ | 0.02 |
-| 2 | 2 | 2 | $\ell\ell$ | $qq$ | 0.07 |
-| 0 | 0 | 6 | $\nu\nu$ | $\nu\nu$ | 0.04 |
-| 0 | 2 | 4 | $\nu\nu$ | $qq$ | 0.14 |
-| 0 | 4 | 2 | $qq$ | $qq$ | 0.49 |
-
-VLL_decaytype = ZZ, VLL_type = NL
-
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay | prob |
-| --- | --- | --- | --- | --- | --- |
-| 5 | 0 | 1 | $\ell\ell$ | $\ell\ell$ | 0.01 |
-| 3 | 0 | 3 | $\ell\ell$ | $\nu\nu$ | 0.02 |
-| 3 | 2 | 1 | $\ell\ell$ | $qq$ | 0.07 |
-| 1 | 0 | 5 | $\nu\nu$ | $\nu\nu$ | 0.04 |
-| 1 | 2 | 3 | $\nu\nu$ | $qq$ | 0.14 |
-| 1 | 4 | 1 | $qq$ | $qq$ | 0.49 |
 
 VLL_decaytype = WZ, VLL_type = LL
 
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay | prob |
 | --- | --- | --- | --- | --- | --- |
-| 4 | 0 | 2 | $\ell\nu$ | $\ell\ell$ | 0.03 |
-| 2 | 0 | 4 | $\ell\nu$ | $\nu\nu$ | 0.06 |
-| 2 | 2 | 2 | $\ell\nu$ | $qq$ | 0.21 |
 | 3 | 2 | 1 | $qq$ | $\ell\ell$ | 0.07 |
-| 1 | 2 | 3 | $qq$ | $\nu\nu$ | 0.14 |
-| 1 | 4 | 1 | $qq$ | $qq$ | 0.49 |
-
-VLL_decaytype = WZ, VLL_type = NN
-
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay | prob |
-| --- | --- | --- | --- | --- | --- |
-| 4 | 0 | 2 | $\ell\nu$ | $\ell\ell$ | 0.03 |
-| 2 | 0 | 4 | $\ell\nu$ | $\nu\nu$ | 0.06 |
-| 2 | 2 | 2 | $\ell\nu$ | $qq$ | 0.21 |
-| 3 | 2 | 1 | $qq$ | $\ell\ell$ | 0.07 |
-| 1 | 2 | 3 | $qq$ | $\nu\nu$ | 0.14 |
 | 1 | 4 | 1 | $qq$ | $qq$ | 0.49 |
 
 VLL_decaytype = WZ, VLL_type = NL
 
 | $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay | prob |
 | --- | --- | --- | --- | --- | --- |
-| 5 | 0 | 1 | $\ell\nu$ | $\ell\ell$ | 0.03 |
-| 3 | 0 | 3 | $\ell\nu$ | $\nu\nu$ | 0.06 |
 | 3 | 2 | 1 | $\ell\nu$ | $qq$ | 0.21 |
 | 4 | 2 | 0 | $qq$ | $\ell\ell$ | 0.07 |
-| 2 | 2 | 2 | $qq$ | $\nu\nu$ | 0.14 |
 | 2 | 4 | 0 | $qq$ | $qq$ | 0.49 |
 
-VLL_decaytype = WZ, VLL_type = LN
+VLL_decaytype = ZZ, VLL_type = LL
 
-| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $W$ decay | $Z$ decay | prob |
+| $n_{\ell}$ | $n_{j}$ | $n_{\nu}$ | $Z$ decay | $Z$ decay | prob |
 | --- | --- | --- | --- | --- | --- |
-| 3 | 0 | 3 | $\ell\nu$ | $\ell\ell$ | 0.03 |
-| 1 | 0 | 5 | $\ell\nu$ | $\nu\nu$ | 0.06 |
-| 1 | 2 | 3 | $\ell\nu$ | $qq$ | 0.21 |
-| 2 | 2 | 2 | $qq$ | $\ell\ell$ | 0.07 |
-| 0 | 2 | 4 | $qq$ | $\nu\nu$ | 0.14 |
-| 0 | 4 | 2 | $qq$ | $qq$ | 0.49 |
-
-total prob: 8.68
+| 4 | 2 | 0 | $\ell\ell$ | $qq$ | 0.07 |
+| 2 | 4 | 0 | $qq$ | $qq$ | 0.49 |
